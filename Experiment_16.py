@@ -3,8 +3,8 @@ phone = input("Enter phone number: ")
 email = input("Enter email ID: ")
 
 # Simple patterns
-phone_pattern = "^[0-9]{10}$" # Exactly 10 digits
-email_pattern = "^[^@]+@[^@]+\.[^@]+$" # Basic email format
+phone_pattern = "^[6-9]\d{9}$" # Exactly 10 digits
+email_pattern = r"^\w+@\w+\.\w{2,}$" # Basic email format
 
 # Check phone number
 if re.match(phone_pattern, phone):
